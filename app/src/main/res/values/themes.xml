@@ -1,0 +1,56 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.Mel" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/gable_green</item>
+        <item name="colorPrimaryVariant">@color/plantation</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/gable_green</item>
+        <item name="colorSecondaryVariant">@color/plantation</item>
+        <item name="colorOnSecondary">@color/selective_yellow</item>
+
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+    <style name="StyleButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@null</item>
+        <item name="fontFamily">@font/nanumgothic_bold</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:textColor">@color/gable_green</item>
+        <item name="android:background">@drawable/b_selector</item>
+    </style>
+
+    <style name="StyleTextTitle">
+        <item name="fontFamily">@font/nanumgothic_bold</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:textColor">@color/plantation</item>
+    </style>
+
+    <style name="StyleText">
+        <item name="fontFamily">@font/nanumgothic_regular</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textColor">@color/gable_green</item>
+    </style>
+
+
+    <style name="StyleTable">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/table_margin</item>
+        <item name="android:layout_marginEnd">@dimen/table_margin</item>
+    </style>
+
+    <style name="StyleColumnTitle" parent="StyleTable">
+        <item name="android:textSize">@dimen/table_title_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="StyleColumnText" parent="StyleTable">
+        <item name="android:textSize">@dimen/table_text_size</item>
+        <item name="android:textColor">@color/gable_green</item>
+    </style>
+</resources>

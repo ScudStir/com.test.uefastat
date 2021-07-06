@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/column_3"
+        style="@style/StyleTable"
+        android:layout_width="@dimen/table_column_width_big"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/column_4"
+        style="@style/StyleTable"
+        android:layout_width="@dimen/table_column_width_big"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/column_1"
+        style="@style/StyleTable"
+        android:layout_width="@dimen/table_column_width_normal"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/column_2"
+        style="@style/StyleTable"
+        android:layout_width="@dimen/table_column_width_small"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/column_5"
+        style="@style/StyleTable"
+        android:layout_width="@dimen/table_column_width_normal"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

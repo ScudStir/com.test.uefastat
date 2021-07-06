@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.6"
+        app:trackColor="@color/selective_yellow" />
+
+    <HorizontalScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gable_green"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:id="@+id/column_3"
+                    style="@style/StyleColumnTitle"
+                    android:layout_width="@dimen/table_column_width_big"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_startDate" />
+
+                <TextView
+                    android:id="@+id/column_4"
+                    style="@style/StyleColumnTitle"
+                    android:layout_width="@dimen/table_column_width_big"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_endDate" />
+
+
+                <TextView
+                    android:id="@+id/column_1"
+                    style="@style/StyleColumnTitle"
+                    android:layout_width="@dimen/table_column_width_normal"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_name" />
+
+
+                <TextView
+                    android:id="@+id/column_2"
+                    style="@style/StyleColumnTitle"
+                    android:layout_width="@dimen/table_column_width_small"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_area" />
+
+                <TextView
+                    android:id="@+id/column_5"
+                    style="@style/StyleColumnTitle"
+                    android:layout_width="@dimen/table_column_width_normal"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_winner" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/statistics"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:nestedScrollingEnabled="false"
+                app:layout_constraintEnd_toEndOf="@id/title"
+                app:layout_constraintStart_toStartOf="@id/title"
+                app:layout_constraintTop_toBottomOf="@id/title" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

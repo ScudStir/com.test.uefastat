@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_text_size">26sp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="title_text_size">22sp</dimen>
+    <dimen name="table_margin">5dp</dimen>
+    <dimen name="table_title_text_size">24sp</dimen>
+    <dimen name="table_text_size">16sp</dimen>
+
+    <dimen name="table_column_width_big">350dp</dimen>
+    <dimen name="table_column_width_small">150dp</dimen>
+    <dimen name="table_column_width_normal">220dp</dimen>
+
+
+</resources>
